@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Register</h1>
+    <form action="">
+        <label for="first">First Name:</label>
+        <input id="first" name="first" type="text" placeholder="John" required/>
+        <label for="last">Last Name:</label>
+        <input id="last" name="last" type="text" placeholder="Smith" required/>
+        
+        <div>
+            <label for="male">Male</label>
+            <input id="male" type="radio" name="gender" value="male"/>
+            <label for="female">Female</label>
+            <input id="female" type="radio" name="gender" value="female"/>
+            <label for="other">Other</label> 
+            <input id="other" type="radio" name="gender" value="other"/><br/>
+        </div>
+        <div>
+            <label>Email:
+                <input name="email" type="email" placeholder="your email" required/>
+            </label>
+            <label>Password:
+                <input name="password"
+                type="password" placeholder="your password" 
+                pattern=".{5,10}" title="5 to 10 caracters" required/>
+            </label>
+        </div>
+        <div>
+            <label>
+                Birthday: 
+                <select name="month">
+                    <option>Month</option>
+                    <option>Jan</option>
+                    <option>Fev</option>
+                    <option>Mar</option>
+                </select>
+                <select name="day">
+                    <option>Day</option>
+                    <option>15</option>
+                    <option>16</option>
+                    <option>17</option>
+                </select>
+                <select name="year">
+                    <option>Year</option>
+                    <option>1998</option>
+                    <option>1999</option>
+                    <option>2000</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <label>
+                I agree to the terms and conditions <input type="checkbox"/>
+            </label>    
+        </div>
+        
+        <button>Submit</button>
+    </form>
+    
+</body>
+</html>
